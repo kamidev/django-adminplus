@@ -16,5 +16,12 @@ DATABASES = {
     },
 }
 
+TEMPLATES = [
+            {
+                        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                                'APP_DIRS': True,
+                                    },
+            ]
+
 ROOT_URLCONF = 'test_urlconf'
 MIDDLEWARE_CLASSES = ()
