@@ -1,3 +1,5 @@
+from os.path import join
+
 INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.contenttypes',
