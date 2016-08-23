@@ -1,4 +1,9 @@
-from os.path import join
+from os.path import dirname, join, exists
+import os
+
+# Build paths inside the project like this: join(BASE_DIR, "directory")
+BASE_DIR = dirname(dirname(dirname(__file__)))
+
 
 INSTALLED_APPS = (
     'django.contrib.sessions',
@@ -21,23 +26,14 @@ DATABASES = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            join(BASE_DIR, 'templates'),
-            # insert more TEMPLATE_DIRS here
-        ],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                # Insert your TEMPLATE_CONTEXT_PROCESSORS here or use this
-                # list if you haven't customized them:
-                'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.debug',
-                'django.template.context_processors.i18n',
-                'django.template.context_processors.media',
-                'django.template.context_processors.static',
-                'django.template.context_processors.tz',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.contrib.auth.context_processors.request',
             ],
         },
     },
