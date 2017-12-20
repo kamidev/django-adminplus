@@ -17,9 +17,8 @@ All AdminPlus does is allow you to add simple custom views (well, they can be
 as complex as you like!) without mucking about with hijacking URLs, and
 providing links to them right in the admin index.
 
-
-.. image:: https://travis-ci.org/jsocol/django-adminplus.png?branch=master
-   :target: https://travis-ci.org/jsocol/django-adminplus
+.. image:: https://travis-ci.org/kamidev/django-adminplus.png?branch=master
+   :target: https://travis-ci.org/kamidev/django-adminplus
 
 
 Installing AdminPlus
